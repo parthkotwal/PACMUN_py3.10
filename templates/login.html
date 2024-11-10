@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PACMUN Mass SMS Login</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="https://files.munnorthwest.org/image/pacmun/afe8875bb93a314f3f468514d29721e790063f96936014311ad60d4f708364e3/pacmunfavicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <style>
+            body {
+                    background-color: #1792a7;
+                    color: #ffffff;
+                    font-family: "Montserrat", sans-serif;
+            }
+            .password-container {
+                position: relative;
+            }
+            .password-container input[type="password"] {
+            padding-right: 40px;
+        }
+        .password-container .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h2 class="mt-5">Login</h2>
+            <form method="POST" class="mt-4">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+                <div class="form-group password-container">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+        <script>
+            function togglePassword() {
+                var passwordInput = document.getElementById('password');
+                var togglePasswordIcon = document.querySelector('.toggle-password');
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    togglePasswordIcon.textContent = '🙈';
+                } else {
+                    passwordInput.type = 'password';
+                    togglePasswordIcon.textContent = '👁️';
+                }
+            }
+        </script>
+    </body>
+</html>

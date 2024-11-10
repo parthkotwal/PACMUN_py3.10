@@ -1,1 +1,80 @@
-First Name,Last Name,Phone Number,Committee,Position
+First Name,Last Name,Phone Number,Committee,Position,Committee Type
+Jade,Chen,+14253931978,UNODC,Director,Principal
+Duong,Tran,+14256289114,UNODC,Chair,Principal
+Nicholas,St. Pierre Nelson,+14254291868,UNODC,Chair,Principal
+Jayden,Padwalker,+14254423897,UNODC,AD,Principal
+Caleb,Li,+14255200051,SOCHUM,Director,Principal
+Izzy,Davidson,+14252737726,SOCHUM,Chair,Principal
+Lindsey,Velarde,+14255888445,SOCHUM,AD,Principal
+Amelia,Hart,+12063103713,SOCHUM,AD,Principal
+Kavya,Rengan,+14254997479,SPECPOL,Director,Principal
+Gatha,Vaghela,+14259007040,SPECPOL,Chair,Principal
+Riya,Kulkarni,+14254695072,SPECPOL,AD,Principal
+Aayona,Pattanaik,+14256257766,ILO,Director,Principal
+Denise,Chang,+14252468039,ILO,Chair,Principal
+Garen,Gudgell,+12089141724,ILO,AD,Principal
+Medha,Singitham,+14254035763,UNSC,Director,Principal
+Lorenzo,Beltran,+12538580592,UNSC,Chair,Principal
+Adiranga,Setlur,+13125399277,UNSC,AD,Principal
+Jessica,Ni,+15039285392,FAO,Director,ECOSOC
+Rachel,Zhu,+14257484775,FAO,Chair,ECOSOC
+Lucy,Wheeler,+14252955968,FAO,AD,ECOSOC
+Arya,Kashyap,+18475010239,UNCSTD,Director,ECOSOC
+Eric,Chang,+14256476819,UNCSTD,Chair,ECOSOC
+Nitin,Munugeti,+14254170432,UNCSTD,AD,ECOSOC
+Rishan,Paul,+14256989473,UN-HABITAT,Director,ECOSOC
+Srikar,Nemani,+14252469178,UN-HABITAT,Chair,ECOSOC
+Lina,Ohrbeck,+12064302990,UN-HABITAT,AD,ECOSOC
+Ellie,Xue,+14255020288,UNCAC,Director,ECOSOC
+Srivasta,Sistla,+14254283982,UNCAC,Chair,ECOSOC
+Carter,Milliren,+12532831826,UNCAC,AD,ECOSOC
+Ian,Miller,+16304187828,APEC,Director,ECOSOC
+Diya,Balaji,+15623487017,APEC,Chair,ECOSOC
+Shivali,Panda,+14254588376,APEC,AD,ECOSOC
+Armaan,Mohapatra,+12064685465,EPL,Director,Regional
+Manasa,Kancharla,+14259791614,EPL,Chair ,Regional
+Vedanth,Rao,+14256330565,EPL,AD,Regional
+Kyra,Lin,+19499230630,JCC 1 (America),Director,Regional
+Julia,Swiatek,+14252867435,JCC 1 (America),Chair,Regional
+Jet,Hughes,+12063274693,JCC 1 (America),AD,Regional
+Advaith,Shyam,+14253959955,JCC 2 (Russia),Director,Regional
+Caden,Ko,+14256287995,JCC 2 (Russia),Chair,Regional
+Olivia,Chen,+14256334610,JCC 2 (Russia),AD,Regional
+Alexander,John Ha,+14252475277,JCC Joint,Director,Regional
+Aashka,Contractor,+14252463367,JCC Joint,Chair,Regional
+Abhidi,Brahnmath,+14254954751,ICNA,Director,Regional
+Mia,Weiss,+14259543925,ICNA,Chair,Regional
+Veda,Hiremath,+14259798535,ICNA,AD,Regional
+Rayan,Rizwan,+14256668087,BRI,Director,Regional
+Ananya,Gupta,+14258668858,BRI,Chair,Regional
+Ethan,Teng,+13109617811,BRI,AD,Regional
+Kathleen,Esnaurizzar,+14252408626,HCC,Director,Specialized
+Darinah,Hou,+14252332423,HCC,Chair,Specialized
+Sarthak,Narang,+14254288119,HCC,AD,Specialized
+Shrey,Bahl,+12069462643,HCC,AD,Specialized
+Aayaan,Raula,+14259790798,F-CABINET,Director,Specialized
+Irisa,Teng,+14259196104,F-CABINET,Chair,Specialized
+Nidhi,Dodiya,+14256980699,F-CABINET,AD,Specialized
+Sarah,Wen,+14253628099,HoR,Director,Specialized
+Brayden,Pugh,+12536179099,HoR,Chair,Specialized
+Anushka,Agate,+14256284606,HoR,AD,Specialized
+Elaina,Dumaliang,+14252360333,ICJ,Director,Specialized
+Breanne,Ng,+14256241995,ICJ,Chair,Specialized
+Christopher,Cao,+12535273290,ICJ,AD,Specialized
+Tavas,Bhadwaraj,+14253015646,IPC,Director,Specialized
+Ruoyu,Wang,+14254588140,IPC,Chair,Specialized
+Anoushka,Vyas,+14253758574,IPC,AD,Specialized
+Dhanyasree,Ramanathan,+14254294770,Principal,Flex Staff,Flex
+Edward,Wang,+14254590073,Principal,Flex Staff,Flex
+Lydia,Tesfalem,+12066366490,Principal,Flex Staff,Flex
+Jamie,Kwon,+14344842236,ECOSOC,Flex Staff,Flex
+Yogitha,Sathish Kumar,+14255916828,ECOSOC,Flex Staff,Flex
+Aarav,Prakash,+14256287868,Regional,Flex Staff,Flex
+Eva,Olteanu,+14255003866,Specialized,Flex Staff,Flex
+Betina,Gudis,+14255897729,Specialized,Flex Staff,Flex
+Uzair,Khurrum,+12066762348,General,Flex Staff,Flex
+Sabina,Kolovyansky,+14255184875,General,Flex Staff,Flex
+David,Ranier Añel,+12535179733,Media Intern,Graphic Design,Media Interns
+Riley,Jensen,+17018055008,Media Intern,Photographer,Media Interns
+Aanchal,Paidi,+14254367043,Media Intern,Videographer,Media Interns
+Trisha,Chakrabarti,+14253934389,Media Intern,Videographer,Media Interns

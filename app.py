@@ -24,13 +24,27 @@ datasets = {
     'Secretariat': secretariat_df
 }
 
+# new
+import re
+def personalize_message(message, row):
+    """
+    Replace placeholders in the message with actual data from the row.
+    Placeholders are in the format {{Column Name}}.
+    """
+    placeholders = re.findall(r'{{(.*?)}}', message)
+    for placeholder in placeholders:
+        if placeholder in row:
+            # Replace the placeholder with the actual value from the row
+            message = message.replace(f'{{{{{placeholder}}}}}', str(row[placeholder]))
+    return message
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 @app.route('/send_sms',methods=['GET','POST'])
 def send_sms():
-    message = request.form['message']
+    message_template = request.form['message']
     selected_groups = request.form.getlist('groups')
     selected_secretariat_members = request.form.getlist('secretariat_members')
     print(f"Selected Groups: {selected_groups}")  # Debugging 
@@ -41,15 +55,19 @@ def send_sms():
         if group == 'Secretariat' and selected_secretariat_members:
             secretariat_df = datasets['Secretariat']
             secretariat_members = secretariat_df[secretariat_df['First Name'].isin([name.split(' ')[0] for name in selected_secretariat_members])]
-            recipients.extend(secretariat_members['Phone Number'].tolist())
+            for _, row in secretariat_members.iterrows():
+                personalized_message = personalize_message(message_template, row)
+                recipients.append((row['Phone Number'], personalized_message))
         else:
             df = datasets.get(group, pd.DataFrame())
-            recipients.extend(df['Phone Number'].tolist())
+            for _, row in df.iterrows():
+                personalized_message = personalize_message(message_template, row)
+                recipients.append((row['Phone Number'], personalized_message))
 
-    for recipient in recipients:
+    for recipient, personalized_message in recipients:
         try:
             client.messages.create(
-                body=message,
+                body=personalized_message,
                 from_=twilio_number,
                 to=recipient
             )
@@ -62,4 +80,4 @@ def send_sms():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
